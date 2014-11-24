@@ -9,11 +9,11 @@ This Mocha plugin allows you to run a test and, if it fails, rerun it a number o
 ### Why you shouldn't use this
 
 Tests that pass sometimes, and sometimes they don't are a bad smell. Your tests should be consistent: either they always pass, or they always fail.
-So, don't you this Mocha plugin, instead make your tests consistent.
+If this is your case, don't use this Mocha plugin, instead make your tests consistent.
 
 ### Why you maybe want to use this
 
-The above rule should be followed always, but sometimes you can't.
+The above rule should be followed, but sometimes you can't.
 Some tests are inherently incosistent, like tests that touch some type of physical artifact, like the network, files, or a web browser.
 Such tests may fail for reasons outside of your control. Maybe the network had a hiccup, or your web browser driver failed to communicate properly with the web browser.
 Who knows? If you can trace the problem and eliminate, then do that, it is the preferred option. If you can't, then you have this Mocha plugin.
